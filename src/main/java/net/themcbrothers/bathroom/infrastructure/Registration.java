@@ -14,6 +14,7 @@ public final class Registration {
     public static void register(IEventBus modEventBus) {
         BathroomBlocks.init();
         BathroomItems.init();
+        BathroomTabs.init();
 
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
