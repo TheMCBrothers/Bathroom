@@ -4,7 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.themcbrothers.bathroom.infrastructure.Registration;
+import net.themcbrothers.bathroom.core.Registration;
 import org.slf4j.Logger;
 
 @Mod(Bathroom.MOD_ID)

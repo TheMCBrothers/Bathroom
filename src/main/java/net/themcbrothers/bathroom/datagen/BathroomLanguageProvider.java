@@ -3,8 +3,8 @@ package net.themcbrothers.bathroom.datagen;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.themcbrothers.bathroom.Bathroom;
-import net.themcbrothers.bathroom.infrastructure.BathroomBlocks;
-import net.themcbrothers.bathroom.infrastructure.BathroomItems;
+import net.themcbrothers.bathroom.core.BathroomBlocks;
+import net.themcbrothers.bathroom.core.BathroomItems;
 
 public class BathroomLanguageProvider extends LanguageProvider {
     public BathroomLanguageProvider(PackOutput output) {

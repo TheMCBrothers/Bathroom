@@ -1,4 +1,4 @@
-package net.themcbrothers.bathroom.infrastructure;
+package net.themcbrothers.bathroom.core;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;

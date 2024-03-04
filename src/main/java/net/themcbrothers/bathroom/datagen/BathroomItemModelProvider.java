@@ -4,7 +4,7 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.themcbrothers.bathroom.Bathroom;
-import net.themcbrothers.bathroom.infrastructure.BathroomItems;
+import net.themcbrothers.bathroom.core.BathroomItems;
 
 public class BathroomItemModelProvider extends ItemModelProvider {
     public BathroomItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {

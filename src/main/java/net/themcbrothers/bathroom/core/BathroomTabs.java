@@ -1,13 +1,13 @@
-package net.themcbrothers.bathroom.infrastructure;
+package net.themcbrothers.bathroom.core;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
-import static net.themcbrothers.bathroom.infrastructure.BathroomBlocks.EXAMPLE_BLOCK;
-import static net.themcbrothers.bathroom.infrastructure.BathroomItems.EXAMPLE_ITEM;
-import static net.themcbrothers.bathroom.infrastructure.Registration.CREATIVE_MODE_TABS;
+import static net.themcbrothers.bathroom.core.BathroomBlocks.EXAMPLE_BLOCK;
+import static net.themcbrothers.bathroom.core.BathroomItems.EXAMPLE_ITEM;
+import static net.themcbrothers.bathroom.core.Registration.CREATIVE_MODE_TABS;
 
 public final class BathroomTabs {
     static void init() {

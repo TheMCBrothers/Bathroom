@@ -1,10 +1,10 @@
-package net.themcbrothers.bathroom.infrastructure;
+package net.themcbrothers.bathroom.core;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 
-import static net.themcbrothers.bathroom.infrastructure.Registration.ITEMS;
+import static net.themcbrothers.bathroom.core.Registration.ITEMS;
 
 public final class BathroomItems {
     static void init() {

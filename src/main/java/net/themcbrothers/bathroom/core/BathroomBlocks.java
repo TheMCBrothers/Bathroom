@@ -1,4 +1,4 @@
-package net.themcbrothers.bathroom.infrastructure;
+package net.themcbrothers.bathroom.core;
 
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
@@ -9,8 +9,8 @@ import net.themcbrothers.bathroom.block.ToiletBlock;
 
 import java.util.function.Function;
 
-import static net.themcbrothers.bathroom.infrastructure.Registration.BLOCKS;
-import static net.themcbrothers.bathroom.infrastructure.Registration.ITEMS;
+import static net.themcbrothers.bathroom.core.Registration.BLOCKS;
+import static net.themcbrothers.bathroom.core.Registration.ITEMS;
 
 public final class BathroomBlocks {
     static void init() {
