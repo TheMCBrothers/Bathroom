@@ -1,16 +1,20 @@
 package net.themcbrothers.bathroom.datagen;
 
 import net.minecraft.DetectedVersion;
+import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.data.metadata.PackMetadataGenerator;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.metadata.pack.PackMetadataSection;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.themcbrothers.bathroom.Bathroom;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -21,6 +25,14 @@ public final class DataGenEvents {
         final var generator = event.getGenerator();
         final var packOutput = generator.getPackOutput();
         final var existingFileHelper = event.getExistingFileHelper();
+
+        // Server resources
+        generator.addProvider(event.includeServer(),
+                new LootTableProvider(
+                        packOutput,
+                        Collections.emptySet(),
+                        List.of(new LootTableProvider.SubProviderEntry(BathroomBlockLootSubProvider::new, LootContextParamSets.BLOCK))
+                ));
 
         // Client resources
         generator.addProvider(event.includeClient(), new BathroomBlockStateProvider(packOutput, existingFileHelper));
